@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/MainFragment">
+
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.example.barbershop_00.MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_MainFragment_to_ServiceListFragment"
+            app:destination="@id/ServiceListFragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_BookingFragment"
+            app:destination="@id/BookingFragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_MasterProfileFragment"
+            app:destination="@id/MasterProfileFragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_ScheduleFragment"
+            app:destination="@id/ScheduleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ServiceListFragment"
+        android:name="com.example.barbershop_00.ServiceListFragment"
+        tools:layout="@layout/fragment_service_list" />
+
+    <fragment
+        android:id="@+id/BookingFragment"
+        android:name="com.example.barbershop_00.BookingFragment"
+        tools:layout="@layout/fragment_booking" />
+
+    <fragment
+        android:id="@+id/MasterProfileFragment"
+        android:name="com.example.barbershop_00.MasterProfileFragment"
+        tools:layout="@layout/fragment_master_profile" />
+
+    <fragment
+        android:id="@+id/ScheduleFragment"
+        android:name="com.example.barbershop_00.ScheduleFragment"
+        tools:layout="@layout/fragment_schedule" />
+</navigation>
